@@ -33,15 +33,15 @@ Click on `Use this template`
 ```
 .
 ├── lua
-│   ├── plugin_name
+│   ├── ts_comment_case
 │   │   └── module.lua
-│   └── plugin_name.lua
+│   └── ts_comment_case.lua
 ├── Makefile
 ├── plugin
-│   └── plugin_name.lua
+│   └── ts_comment_case.lua
 ├── README.md
 ├── tests
 │   ├── minimal_init.lua
-│   └── plugin_name
-│       └── plugin_name_spec.lua
+│   └── ts_comment_case
+│       └── ts_comment_case_spec.lua
 ```
