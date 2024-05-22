@@ -1,9 +1,11 @@
 {
   "name": "ts-comment-case",
-  "module": true,
   "version": "0.0.1",
-  "description": "a nvim plugin to change comment case",
-  "main": "./index.mjs",
+  "description": "a plugin to change comment case",
+  "main": "./index.js",
+  "bin": {
+    "tscc": "./bin/tscc.js"
+  },
   "scripts": {
     "dev": "father dev",
     "build": "father build",
@@ -22,10 +24,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "devDependencies": {
-    "father": "^4.4.1",
+  "dependencies": {
+    "commander": "^12.1.0",
     "neovim": "^5.1.0",
     "tsutils": "^3.21.0",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "father": "^4.4.1"
   }
 }

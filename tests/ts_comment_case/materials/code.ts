@@ -7,6 +7,7 @@
  */
 // This is an interface called Test.
 // @description this is a description.
+// "double quote"
 export interface Test {
   /**
    * this is an interface prop called name.
@@ -14,6 +15,7 @@ export interface Test {
   name: string;
 
   // this is an interface prop called age.
+  // @description this is a description.
   age: number;
 }
 
@@ -36,9 +38,13 @@ const jsdoc = () => {
 
   /**
    * inner JSDoc comment
+   *
+   * @description this is a JSDoc comment description
    */
   const innerJSDocComment = 'innerJSDocComment'; // inline comment
 
+  // Multi line comment
+  // Multi line comment
   console.log({
     singleLineComment,
     blockLineComment,

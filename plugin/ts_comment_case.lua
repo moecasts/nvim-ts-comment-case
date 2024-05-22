@@ -1,1 +1,4 @@
-vim.api.nvim_create_user_command("MyFirstFunction", require("ts_comment_case").hello, {})
+vim.api.nvim_create_user_command("TSCCReplaceAll", require("ts_comment_case.module").tscc_replace_all, {})
+vim.api.nvim_create_user_command("TSCCReplaceRange", require("ts_comment_case.module").tscc_replace_range, {
+  range = true,
+})
